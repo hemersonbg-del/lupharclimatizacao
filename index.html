@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>LUPHAR Climatização | Climatização, Refrigeração e Instalação</title>
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+LUPHAR Climatização | Climatização, Refrigeração e Instalação
+</title>
 
 <style>
 
-/* ==================================================
-   CONFIGURAÇÕES
-================================================== */
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
 
 :root {
     --azul-escuro: #0E1A2B;
     --azul: #1565C0;
     --azul-claro: #29B6F6;
-    --cinza: #8A8F98;
-    --claro: #F4F7FA;
     --branco: #FFFFFF;
+    --cinza-claro: #F4F7FA;
+    --texto: #647282;
     --whatsapp: #25D366;
 }
 
@@ -34,17 +40,18 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background: white;
     color: var(--azul-escuro);
-    background: var(--branco);
     line-height: 1.6;
-}
-
-img {
-    max-width: 100%;
 }
 
 a {
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 .container {
@@ -54,485 +61,700 @@ a {
 }
 
 section {
-    padding: 85px 0;
+    padding: 80px 0;
 }
 
 
-/* ==================================================
+/* =========================================
    CABEÇALHO
-================================================== */
+========================================= */
 
 header {
-    background: rgba(14, 26, 43, 0.98);
+
+    background: var(--azul-escuro);
+
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+
+    box-shadow:
+    0 3px 15px rgba(0,0,0,0.20);
+
 }
 
 .header-content {
-    min-height: 85px;
+
+    min-height: 82px;
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     gap: 25px;
+
 }
 
 
-/* LOGO EM TEXTO */
-
-.logo {
-    color: white;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
+/* LOGO */
 
 .logo-main {
+
+    color: white;
+
     font-size: 27px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
 }
 
 .logo-main span {
+
     color: var(--azul-claro);
+
 }
 
 .logo-subtitle {
+
     color: #d8e1ea;
+
     font-size: 8px;
+
     letter-spacing: 2px;
+
     margin-top: 3px;
+
 }
 
 
+/* MENU */
+
 nav {
+
     display: flex;
-    gap: 25px;
+
+    gap: 22px;
+
 }
 
 nav a {
+
     color: white;
-    font-size: 14px;
+
+    font-size: 13px;
+
     font-weight: bold;
+
 }
 
 nav a:hover {
+
     color: var(--azul-claro);
+
 }
+
 
 .header-btn {
+
     background: var(--whatsapp);
+
     color: white;
-    padding: 12px 20px;
+
+    padding: 12px 18px;
+
     border-radius: 30px;
-    font-size: 14px;
+
+    font-size: 13px;
+
     font-weight: bold;
+
 }
 
 
-/* ==================================================
+/* =========================================
    HERO PRINCIPAL
-================================================== */
+========================================= */
 
 .hero {
+
     min-height: 650px;
 
+    display: flex;
+
+    align-items: center;
+
+    color: white;
+
     background:
+
     linear-gradient(
         90deg,
-        rgba(14,26,43,0.96) 0%,
-        rgba(14,26,43,0.88) 42%,
-        rgba(14,26,43,0.30) 100%
+        rgba(14,26,43,0.96),
+        rgba(14,26,43,0.82),
+        rgba(14,26,43,0.30)
     ),
+
     url("https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1800&q=90");
 
     background-size: cover;
+
     background-position: center;
 
-    display: flex;
-    align-items: center;
-
-    color: white;
 }
 
 .hero-content {
+
     max-width: 680px;
+
 }
 
 .hero-label {
+
     color: var(--azul-claro);
-    font-size: 14px;
+
+    font-size: 13px;
+
     font-weight: bold;
+
     letter-spacing: 3px;
+
     margin-bottom: 18px;
+
 }
 
 .hero h1 {
+
     font-size: 58px;
+
     line-height: 1.08;
+
     margin-bottom: 25px;
-    text-transform: uppercase;
+
 }
 
 .hero h1 span {
+
     color: var(--azul-claro);
+
 }
 
 .hero p {
-    font-size: 19px;
-    max-width: 600px;
-    color: #e4ebf2;
-    margin-bottom: 32px;
+
+    font-size: 18px;
+
+    color: #e1e9f0;
+
+    margin-bottom: 30px;
+
 }
 
+
+/* BOTÕES */
+
 .hero-buttons {
+
     display: flex;
-    flex-wrap: wrap;
+
     gap: 15px;
+
+    flex-wrap: wrap;
+
 }
 
 .btn {
+
     display: inline-block;
-    padding: 16px 25px;
+
+    padding: 16px 24px;
+
     border-radius: 6px;
+
     font-weight: bold;
+
     transition: 0.3s;
+
 }
 
 .btn:hover {
+
     transform: translateY(-3px);
+
 }
 
 .btn-primary {
+
     background: var(--azul);
+
     color: white;
+
 }
 
 .btn-whatsapp {
+
     background: var(--whatsapp);
+
     color: white;
+
 }
 
 
-/* ==================================================
-   FAIXA DE DIFERENCIAIS
-================================================== */
+/* =========================================
+   FAIXA DE BENEFÍCIOS
+========================================= */
 
 .quick-info {
+
     background: var(--azul-escuro);
+
     color: white;
+
     padding: 28px 0;
+
 }
 
 .quick-grid {
+
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-columns:
+    repeat(4,1fr);
+
     gap: 20px;
+
 }
 
 .quick-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 13px;
-    border-right: 1px solid rgba(255,255,255,0.2);
-}
 
-.quick-item:last-child {
-    border-right: none;
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
 }
 
 .quick-icon {
+
     font-size: 28px;
+
 }
 
 .quick-item strong {
+
     display: block;
-    font-size: 15px;
+
     letter-spacing: 1px;
+
 }
 
 .quick-item span {
+
     font-size: 11px;
-    color: #c8d3dd;
+
+    color: #cbd5df;
+
 }
 
 
-/* ==================================================
+/* =========================================
    TÍTULOS
-================================================== */
+========================================= */
 
 .section-title {
+
     text-align: center;
+
     max-width: 750px;
+
     margin: 0 auto 50px;
+
 }
 
 .section-title span {
+
     color: var(--azul);
+
     font-size: 13px;
-    letter-spacing: 3px;
+
     font-weight: bold;
+
+    letter-spacing: 3px;
+
 }
 
 .section-title h2 {
+
     font-size: 38px;
-    margin-top: 8px;
-    color: var(--azul-escuro);
+
+    margin-top: 10px;
+
 }
 
 .section-title p {
-    color: #647282;
+
+    color: var(--texto);
+
     margin-top: 12px;
+
 }
 
 
-/* ==================================================
+/* =========================================
    SERVIÇOS
-================================================== */
+========================================= */
 
 .services {
-    background: var(--claro);
+
+    background: var(--cinza-claro);
+
 }
 
 .service-grid {
+
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-columns:
+    repeat(4,1fr);
+
     gap: 22px;
+
 }
 
+
+/* CARTÃO */
+
 .service-card {
+
     background: white;
-    border-radius: 10px;
+
+    border-radius: 12px;
+
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.08);
+
     transition: 0.3s;
+
 }
 
 .service-card:hover {
-    transform: translateY(-7px);
+
+    transform: translateY(-6px);
+
 }
+
+
+/* FOTO DO SERVIÇO */
 
 .service-image {
-    height: 170px;
-    background-size: cover;
-    background-position: center;
+
+    width: 100%;
+
+    height: 185px;
+
+    overflow: hidden;
+
+    background: #dfe8ee;
+
 }
 
+
+/*
+IMAGEM DIRETA
+
+AQUI ESTÁ A PRINCIPAL CORREÇÃO.
+
+Agora usamos IMG dentro do cartão,
+em vez de depender apenas do CSS.
+*/
+
+.service-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+}
+
+
+/* TEXTO */
+
 .service-content {
-    padding: 23px;
+
+    padding: 22px;
+
 }
 
 .service-content h3 {
-    color: var(--azul-escuro);
+
     font-size: 18px;
+
     margin-bottom: 10px;
+
+    color: var(--azul-escuro);
+
 }
 
 .service-content p {
-    color: #687685;
+
+    color: var(--texto);
+
     font-size: 14px;
-}
 
-.img-installacao {
-    background-image:
-    url("https://images.unsplash.com/photo-1631545806609-0e0e32c7d3c3?auto=format&fit=crop&w=800&q=80");
-}
-
-.img-manutencao {
-    background-image:
-    url("https://images.unsplash.com/photo-1621905252472-943afaa20e9a?auto=format&fit=crop&w=800&q=80");
-}
-
-.img-limpeza {
-    background-image:
-    url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80");
-}
-
-.img-comercial {
-    background-image:
-    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80");
-}
-
-.img-industrial {
-    background-image:
-    url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80");
-}
-
-.img-condominio {
-    background-image:
-    url("https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80");
-}
-
-.img-pmoc {
-    background-image:
-    url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80");
-}
-
-.img-refrigeracao {
-    background-image:
-    url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80");
 }
 
 
-/* ==================================================
-   QUEM SOMOS
-================================================== */
+/* =========================================
+   SOBRE A EMPRESA
+========================================= */
 
 .about {
+
     background: var(--azul-escuro);
+
     color: white;
+
 }
 
 .about-grid {
+
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 65px;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap: 60px;
+
     align-items: center;
+
 }
 
 .about-image {
-    min-height: 450px;
+
+    height: 450px;
+
     border-radius: 12px;
 
     background:
+
     linear-gradient(
         rgba(14,26,43,0.20),
-        rgba(14,26,43,0.35)
+        rgba(14,26,43,0.40)
     ),
+
     url("https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1000&q=90");
 
     background-size: cover;
+
     background-position: center;
+
 }
 
-.about-content .small-title {
+.small-title {
+
     color: var(--azul-claro);
-    letter-spacing: 3px;
+
     font-size: 13px;
+
     font-weight: bold;
+
+    letter-spacing: 3px;
+
 }
 
-.about-content h2 {
-    font-size: 42px;
-    line-height: 1.1;
+.about h2 {
+
+    font-size: 40px;
+
+    line-height: 1.15;
+
     margin: 15px 0 22px;
+
 }
 
-.about-content p {
+.about p {
+
     color: #d8e1ea;
+
     margin-bottom: 18px;
+
 }
 
 .about-list {
+
     margin-top: 25px;
+
 }
 
 .about-list div {
+
     margin-bottom: 13px;
+
     font-weight: bold;
+
 }
 
 .about-list span {
+
     color: var(--azul-claro);
+
     margin-right: 10px;
+
 }
 
 
-/* ==================================================
-   EQUIPAMENTOS
-================================================== */
+/* =========================================
+   AMBIENTES
+========================================= */
 
 .equipment-grid {
+
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns:
+    repeat(3,1fr);
+
     gap: 25px;
+
 }
 
 .equipment {
-    position: relative;
+
     height: 330px;
+
     border-radius: 12px;
+
+    position: relative;
+
     overflow: hidden;
 
     background-size: cover;
+
     background-position: center;
+
 }
 
 .equipment::after {
+
     content: "";
+
     position: absolute;
+
     inset: 0;
 
     background:
+
     linear-gradient(
         transparent,
         rgba(14,26,43,0.92)
     );
-}
 
-.equipment-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    padding: 28px;
-    color: white;
-}
-
-.equipment-content h3 {
-    font-size: 23px;
-    margin-bottom: 8px;
 }
 
 .eq1 {
+
     background-image:
     url("https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=900&q=80");
+
 }
 
 .eq2 {
+
     background-image:
-    url("https://images.unsplash.com/photo-1621905252472-943afaa20e9a?auto=format&fit=crop&w=900&q=80");
+    url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80");
+
 }
 
 .eq3 {
+
     background-image:
-    url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80");
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80");
+
+}
+
+.equipment-content {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    z-index: 2;
+
+    color: white;
+
+    padding: 28px;
+
 }
 
 
-/* ==================================================
-   ATENDIMENTO
-================================================== */
+/* =========================================
+   ÁREA DE ATENDIMENTO
+========================================= */
 
 .service-area {
+
     background: #eef5fa;
+
 }
 
 .area-grid {
+
     display: grid;
-    grid-template-columns: 1fr 1fr;
+
+    grid-template-columns:
+    1fr 1fr;
+
     gap: 30px;
+
 }
 
 .area-box {
+
     background: white;
+
     padding: 40px;
+
     border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.06);
+
 }
 
 .area-box h3 {
-    color: var(--azul-escuro);
+
     font-size: 25px;
-    margin-bottom: 22px;
+
+    margin-bottom: 20px;
+
 }
 
 .area-box p {
-    color: #637180;
-    margin-bottom: 15px;
+
+    color: var(--texto);
+
+    margin-bottom: 12px;
+
 }
 
 .radius-box {
+
     background:
+
     linear-gradient(
         135deg,
         var(--azul),
@@ -541,230 +763,303 @@ nav a:hover {
 
     color: white;
 
+    text-align: center;
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
     justify-content: center;
 
-    text-align: center;
 }
 
 .radius-number {
-    width: 190px;
-    height: 190px;
 
-    border-radius: 50%;
+    width: 180px;
+
+    height: 180px;
+
     border: 3px solid var(--azul-claro);
 
+    border-radius: 50%;
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
     justify-content: center;
 
     margin-bottom: 20px;
+
 }
 
 .radius-number strong {
-    font-size: 48px;
+
+    font-size: 50px;
+
 }
 
 .radius-number span {
-    font-size: 18px;
+
+    font-size: 16px;
+
 }
 
 
-/* ==================================================
+/* =========================================
    HORÁRIOS
-================================================== */
-
-.hours {
-    background: white;
-}
+========================================= */
 
 .hours-grid {
+
     display: grid;
-    grid-template-columns: 1fr 1fr;
+
+    grid-template-columns:
+    1fr 1fr;
+
     gap: 60px;
+
     align-items: center;
+
 }
 
 .hours-image {
+
     height: 400px;
+
     border-radius: 12px;
 
     background:
-    linear-gradient(
-        rgba(14,26,43,0.25),
-        rgba(14,26,43,0.45)
-    ),
+
     url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=80");
 
     background-size: cover;
+
     background-position: center;
+
 }
 
 .hours-content h2 {
+
     font-size: 38px;
-    color: var(--azul-escuro);
-    margin-bottom: 20px;
+
+    margin-bottom: 25px;
+
 }
 
 .schedule-item {
+
     display: flex;
+
     justify-content: space-between;
 
     padding: 18px 0;
 
-    border-bottom: 1px solid #dbe3e9;
+    border-bottom:
+    1px solid #dbe3e9;
 
-    font-size: 16px;
 }
 
 .schedule-item strong {
+
     color: var(--azul);
+
 }
 
 
-/* ==================================================
-   CTA FINAL
-================================================== */
+/* =========================================
+   CHAMADA FINAL
+========================================= */
 
 .final-cta {
-    padding: 90px 0;
+
+    text-align: center;
+
+    color: white;
 
     background:
+
     linear-gradient(
         90deg,
         rgba(14,26,43,0.95),
-        rgba(21,101,192,0.88)
+        rgba(21,101,192,0.85)
     ),
+
     url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1800&q=90");
 
     background-size: cover;
+
     background-position: center;
 
-    text-align: center;
-    color: white;
 }
 
 .final-cta h2 {
-    font-size: 45px;
-    max-width: 850px;
-    margin: auto;
-    line-height: 1.15;
+
+    font-size: 44px;
+
 }
 
 .final-cta p {
+
     font-size: 18px;
-    margin: 20px auto 30px;
-    max-width: 600px;
+
+    margin:
+    20px auto 30px;
+
 }
 
 
-/* ==================================================
+/* =========================================
    RODAPÉ
-================================================== */
+========================================= */
 
 footer {
+
     background: #091321;
+
     color: white;
-    padding: 60px 0 25px;
+
+    padding:
+    60px 0 25px;
+
 }
 
 .footer-grid {
+
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr;
+
+    grid-template-columns:
+    1.2fr 1fr 1fr;
+
     gap: 50px;
+
     margin-bottom: 40px;
+
 }
 
 .footer-brand {
-    font-size: 28px;
+
+    font-size: 27px;
+
     font-weight: bold;
+
     letter-spacing: 2px;
+
 }
 
 .footer-brand span {
+
     color: var(--azul-claro);
+
 }
 
 .footer-sub {
-    color: #c3d0db;
-    font-size: 10px;
+
+    font-size: 9px;
+
     letter-spacing: 2px;
-    margin-top: 5px;
+
+    color: #c3d0db;
+
 }
 
 .footer-title {
+
     color: var(--azul-claro);
+
     font-weight: bold;
-    letter-spacing: 1px;
+
     margin-bottom: 18px;
+
 }
 
 footer p {
+
     color: #b7c4cf;
+
     font-size: 14px;
+
     margin-bottom: 10px;
+
 }
 
 .copyright {
-    border-top: 1px solid rgba(255,255,255,0.12);
-    padding-top: 22px;
+
     text-align: center;
+
+    border-top:
+    1px solid rgba(255,255,255,0.12);
+
+    padding-top: 22px;
+
 }
 
 
-/* ==================================================
+/* =========================================
    WHATSAPP FLUTUANTE
-================================================== */
+========================================= */
 
 .whatsapp-float {
+
     position: fixed;
+
     right: 22px;
+
     bottom: 22px;
 
     width: 62px;
-    height: 62px;
 
-    background: var(--whatsapp);
-    color: white;
+    height: 62px;
 
     border-radius: 50%;
 
+    background: var(--whatsapp);
+
+    color: white;
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     font-size: 28px;
 
-    box-shadow: 0 8px 22px rgba(0,0,0,0.30);
+    z-index: 9999;
 
-    z-index: 999;
+    box-shadow:
+    0 8px 22px rgba(0,0,0,0.30);
+
 }
 
 
-/* ==================================================
-   RESPONSIVO
-================================================== */
+/* =========================================
+   CELULAR E TABLET
+========================================= */
 
-@media (max-width: 1000px) {
+@media(max-width:1000px) {
 
     nav {
         display: none;
     }
 
     .service-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+        repeat(2,1fr);
     }
 
     .quick-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+        repeat(2,1fr);
     }
 
     .about-grid,
-    .hours-grid,
-    .area-grid {
+    .area-grid,
+    .hours-grid {
         grid-template-columns: 1fr;
     }
 
@@ -773,16 +1068,17 @@ footer p {
     }
 
     .footer-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:
+        1fr 1fr;
     }
 
 }
 
-@media (max-width: 600px) {
+
+@media(max-width:600px) {
 
     .header-content {
         justify-content: center;
-        padding: 15px 0;
     }
 
     .header-btn {
@@ -790,45 +1086,11 @@ footer p {
     }
 
     .hero {
-        min-height: 680px;
-        background-position: 60% center;
+        min-height: 650px;
     }
 
     .hero h1 {
         font-size: 38px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .quick-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .quick-item {
-        border-right: none;
-    }
-
-    .section-title h2 {
-        font-size: 30px;
-    }
-
-    .about-content h2,
-    .hours-content h2 {
-        font-size: 32px;
-    }
-
-    .final-cta h2 {
-        font-size: 32px;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
     }
 
     .hero-buttons {
@@ -839,31 +1101,63 @@ footer p {
         text-align: center;
     }
 
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-grid {
+        grid-template-columns:
+        1fr 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .about h2,
+    .hours-content h2 {
+        font-size: 31px;
+    }
+
+    .final-cta h2 {
+        font-size: 31px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 </style>
+
 </head>
 
 
 <body>
 
 
-<!-- ==================================================
+<!-- =========================================
      CABEÇALHO
-================================================== -->
+========================================= -->
 
 <header>
 
 <div class="container header-content">
 
-<div class="logo">
+<div>
 
 <div class="logo-main">
-LUPHAR <span>CLIMATIZAÇÃO</span>
+
+LUPHAR
+<span>CLIMATIZAÇÃO</span>
+
 </div>
 
 <div class="logo-subtitle">
+
 CLIMATIZAÇÃO • REFRIGERAÇÃO • INSTALAÇÃO
+
 </div>
 
 </div>
@@ -872,16 +1166,22 @@ CLIMATIZAÇÃO • REFRIGERAÇÃO • INSTALAÇÃO
 <nav>
 
 <a href="#inicio">INÍCIO</a>
+
 <a href="#servicos">SERVIÇOS</a>
+
 <a href="#empresa">EMPRESA</a>
+
 <a href="#atendimento">ATENDIMENTO</a>
+
 <a href="#horarios">HORÁRIOS</a>
+
 <a href="#contato">CONTATO</a>
 
 </nav>
 
 
-<a class="header-btn"
+<a
+class="header-btn"
 href="https://wa.me/5531988336861"
 target="_blank">
 
@@ -895,18 +1195,22 @@ target="_blank">
 
 
 
-<!-- ==================================================
-     HERO
-================================================== -->
+<!-- =========================================
+     INÍCIO
+========================================= -->
 
-<section class="hero" id="inicio">
+<section
+class="hero"
+id="inicio">
 
 <div class="container">
 
 <div class="hero-content">
 
 <div class="hero-label">
+
 LUPHAR CLIMATIZAÇÃO
+
 </div>
 
 
@@ -923,16 +1227,17 @@ AMBIENTE
 
 <p>
 
-Soluções completas em climatização, refrigeração,
-instalação, manutenção e higienização para residências,
-empresas, comércios e diversos ambientes.
+Soluções completas em climatização,
+refrigeração, instalação, manutenção
+e higienização.
 
 </p>
 
 
 <div class="hero-buttons">
 
-<a href="#contato"
+<a
+href="#contato"
 class="btn btn-primary">
 
 SOLICITAR ORÇAMENTO
@@ -940,7 +1245,8 @@ SOLICITAR ORÇAMENTO
 </a>
 
 
-<a href="https://wa.me/5531988336861"
+<a
+href="https://wa.me/5531988336861"
 target="_blank"
 class="btn btn-whatsapp">
 
@@ -958,9 +1264,9 @@ class="btn btn-whatsapp">
 
 
 
-<!-- ==================================================
-     DIFERENCIAIS RÁPIDOS
-================================================== -->
+<!-- =========================================
+     BENEFÍCIOS
+========================================= -->
 
 <section class="quick-info">
 
@@ -984,7 +1290,6 @@ class="btn btn-whatsapp">
 </div>
 
 
-
 <div class="quick-item">
 
 <div class="quick-icon">🛡️</div>
@@ -1000,7 +1305,6 @@ class="btn btn-whatsapp">
 </div>
 
 
-
 <div class="quick-item">
 
 <div class="quick-icon">⚙️</div>
@@ -1014,7 +1318,6 @@ class="btn btn-whatsapp">
 </div>
 
 </div>
-
 
 
 <div class="quick-item">
@@ -1040,43 +1343,63 @@ class="btn btn-whatsapp">
 
 
 
-<!-- ==================================================
+<!-- =========================================
      SERVIÇOS
-================================================== -->
+========================================= -->
 
-<section class="services" id="servicos">
+<section
+class="services"
+id="servicos">
 
 <div class="container">
+
 
 <div class="section-title">
 
 <span>NOSSAS SOLUÇÕES</span>
 
 <h2>
-Tudo o que você precisa em climatização
+
+Tudo o que você precisa
+em climatização
+
 </h2>
 
 <p>
-Serviços profissionais para proporcionar mais conforto,
-qualidade e eficiência para o seu ambiente.
+
+Serviços profissionais para residências,
+empresas, comércios e outros ambientes.
+
 </p>
 
 </div>
 
 
+
 <div class="service-grid">
 
 
+<!-- INSTALAÇÃO -->
+
 <div class="service-card">
 
-<div class="service-image img-installacao"></div>
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=90"
+alt="Instalação de ar-condicionado">
+
+</div>
 
 <div class="service-content">
 
 <h3>Instalação</h3>
 
 <p>
-Instalação profissional de sistemas de ar-condicionado.
+
+Instalação profissional
+de sistemas de ar-condicionado.
+
 </p>
 
 </div>
@@ -1085,16 +1408,27 @@ Instalação profissional de sistemas de ar-condicionado.
 
 
 
+<!-- MANUTENÇÃO -->
+
 <div class="service-card">
 
-<div class="service-image img-manutencao"></div>
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1621905252472-943afaa20e9a?auto=format&fit=crop&w=900&q=90"
+alt="Manutenção preventiva de ar-condicionado">
+
+</div>
 
 <div class="service-content">
 
 <h3>Manutenção Preventiva</h3>
 
 <p>
-Cuidados para preservar o desempenho dos equipamentos.
+
+Cuidados e manutenção para
+o melhor desempenho do equipamento.
+
 </p>
 
 </div>
@@ -1103,16 +1437,27 @@ Cuidados para preservar o desempenho dos equipamentos.
 
 
 
+<!-- LIMPEZA -->
+
 <div class="service-card">
 
-<div class="service-image img-limpeza"></div>
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=90"
+alt="Limpeza e higienização de ar-condicionado">
+
+</div>
 
 <div class="service-content">
 
 <h3>Limpeza e Higienização</h3>
 
 <p>
-Mais qualidade do ar e conforto para o ambiente.
+
+Limpeza profissional para
+mais qualidade do ar.
+
 </p>
 
 </div>
@@ -1121,16 +1466,27 @@ Mais qualidade do ar e conforto para o ambiente.
 
 
 
+<!-- COMERCIAL -->
+
 <div class="service-card">
 
-<div class="service-image img-comercial"></div>
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
+alt="Climatização comercial">
+
+</div>
 
 <div class="service-content">
 
 <h3>Climatização Comercial</h3>
 
 <p>
-Soluções para empresas, escritórios e comércios.
+
+Soluções para empresas,
+comércios e escritórios.
+
 </p>
 
 </div>
@@ -1139,16 +1495,27 @@ Soluções para empresas, escritórios e comércios.
 
 
 
+<!-- INDUSTRIAL -->
+
 <div class="service-card">
 
-<div class="service-image img-industrial"></div>
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80"
+alt="Climatização industrial">
+
+</div>
 
 <div class="service-content">
 
 <h3>Climatização Industrial</h3>
 
 <p>
-Atendimento para diferentes necessidades industriais.
+
+Soluções para diferentes
+necessidades industriais.
+
 </p>
 
 </div>
@@ -1157,16 +1524,27 @@ Atendimento para diferentes necessidades industriais.
 
 
 
+<!-- CONDOMÍNIOS -->
+
 <div class="service-card">
 
-<div class="service-image img-condominio"></div>
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=900&q=80"
+alt="Serviços para condomínios">
+
+</div>
 
 <div class="service-content">
 
 <h3>Condomínios</h3>
 
 <p>
-Serviços para áreas comuns e sistemas de climatização.
+
+Atendimento para áreas comuns
+e ambientes climatizados.
+
 </p>
 
 </div>
@@ -1175,16 +1553,27 @@ Serviços para áreas comuns e sistemas de climatização.
 
 
 
+<!-- PMOC -->
+
 <div class="service-card">
 
-<div class="service-image img-pmoc"></div>
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80"
+alt="PMOC">
+
+</div>
 
 <div class="service-content">
 
 <h3>PMOC</h3>
 
 <p>
-Plano de Manutenção, Operação e Controle.
+
+Plano de Manutenção,
+Operação e Controle.
+
 </p>
 
 </div>
@@ -1193,16 +1582,27 @@ Plano de Manutenção, Operação e Controle.
 
 
 
+<!-- REFRIGERAÇÃO -->
+
 <div class="service-card">
 
-<div class="service-image img-refrigeracao"></div>
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80"
+alt="Refrigeração">
+
+</div>
 
 <div class="service-content">
 
 <h3>Refrigeração</h3>
 
 <p>
-Soluções adequadas às necessidades de cada ambiente.
+
+Soluções adequadas para
+cada necessidade.
+
 </p>
 
 </div>
@@ -1218,11 +1618,13 @@ Soluções adequadas às necessidades de cada ambiente.
 
 
 
-<!-- ==================================================
+<!-- =========================================
      EMPRESA
-================================================== -->
+========================================= -->
 
-<section class="about" id="empresa">
+<section
+class="about"
+id="empresa">
 
 <div class="container">
 
@@ -1232,32 +1634,37 @@ Soluções adequadas às necessidades de cada ambiente.
 <div class="about-image"></div>
 
 
-<div class="about-content">
+<div>
 
 <div class="small-title">
+
 SOBRE A LUPHAR
+
 </div>
 
 
 <h2>
-CLIMATIZAÇÃO COM QUALIDADE E EFICIÊNCIA
+
+CLIMATIZAÇÃO COM
+QUALIDADE E EFICIÊNCIA
+
 </h2>
 
 
 <p>
 
-A LUPHAR Climatização oferece soluções para proporcionar
-conforto e bem-estar em diferentes tipos de ambientes.
+A LUPHAR Climatização oferece
+soluções para proporcionar conforto
+e bem-estar em diferentes ambientes.
 
 </p>
 
 
 <p>
 
-Atuamos com instalação, manutenção, higienização,
-climatização e refrigeração, buscando oferecer
-um atendimento profissional e soluções adequadas
-para cada necessidade.
+Atuamos com instalação,
+manutenção, higienização,
+climatização e refrigeração.
 
 </p>
 
@@ -1265,29 +1672,43 @@ para cada necessidade.
 <div class="about-list">
 
 <div>
+
 <span>❄</span>
-Conforto para o seu ambiente
+
+Conforto para seu ambiente
+
 </div>
 
+
 <div>
+
 <span>✓</span>
+
 Qualidade em cada serviço
+
 </div>
 
+
 <div>
+
 <span>⚙</span>
+
 Tecnologia e eficiência
+
 </div>
+
 
 <div>
+
 <span>👨‍🔧</span>
+
 Atendimento profissional
-</div>
 
 </div>
 
 </div>
 
+</div>
 
 </div>
 
@@ -1297,104 +1718,29 @@ Atendimento profissional
 
 
 
-<!-- ==================================================
-     SOLUÇÕES POR AMBIENTE
-================================================== -->
-
-<section>
-
-<div class="container">
-
-<div class="section-title">
-
-<span>SOLUÇÕES PERSONALIZADAS</span>
-
-<h2>
-Climatização para diferentes ambientes
-</h2>
-
-</div>
-
-
-<div class="equipment-grid">
-
-
-<div class="equipment eq1">
-
-<div class="equipment-content">
-
-<h3>Residencial</h3>
-
-<p>
-Conforto para sua casa e sua família.
-</p>
-
-</div>
-
-</div>
-
-
-
-<div class="equipment eq2">
-
-<div class="equipment-content">
-
-<h3>Comercial</h3>
-
-<p>
-Soluções para empresas e estabelecimentos.
-</p>
-
-</div>
-
-</div>
-
-
-
-<div class="equipment eq3">
-
-<div class="equipment-content">
-
-<h3>Empresarial</h3>
-
-<p>
-Ambientes climatizados para melhor desempenho.
-</p>
-
-</div>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- ==================================================
+<!-- =========================================
      ÁREA DE ATENDIMENTO
-================================================== -->
+========================================= -->
 
-<section class="service-area" id="atendimento">
+<section
+class="service-area"
+id="atendimento">
 
 <div class="container">
+
 
 <div class="section-title">
 
 <span>ÁREA DE ATENDIMENTO</span>
 
 <h2>
+
 Estamos perto de você
+
 </h2>
 
-<p>
-Atendimento profissional em Contagem e região.
-</p>
-
 </div>
+
 
 
 <div class="area-grid">
@@ -1403,33 +1749,41 @@ Atendimento profissional em Contagem e região.
 <div class="area-box">
 
 <h3>
+
 📍 Nossa sede
+
 </h3>
 
 
 <p>
 
 <strong>
+
 Rua Sete de Setembro, 408
+
 </strong>
 
 </p>
 
 
 <p>
+
 Bairro Nacional
+
 </p>
 
 
 <p>
+
 Contagem – MG
+
 </p>
 
 
 <p>
 
-Atendemos clientes em um raio de até
-<strong>70 km da nossa sede.</strong>
+Atendimento em um raio
+de até <strong>70 km</strong>.
 
 </p>
 
@@ -1449,13 +1803,17 @@ Atendemos clientes em um raio de até
 
 
 <h3>
-Atendimento regional
+
+Atendimento Regional
+
 </h3>
 
 
 <p>
-Levamos soluções de climatização
+
+Levamos soluções em climatização
 até você.
+
 </p>
 
 </div>
@@ -1469,11 +1827,12 @@ até você.
 
 
 
-<!-- ==================================================
+<!-- =========================================
      HORÁRIOS
-================================================== -->
+========================================= -->
 
-<section class="hours" id="horarios">
+<section
+id="horarios">
 
 <div class="container">
 
@@ -1487,23 +1846,32 @@ até você.
 <div class="hours-content">
 
 <div class="hero-label">
+
 HORÁRIO DE FUNCIONAMENTO
+
 </div>
 
 
 <h2>
-Estamos prontos para atender você.
+
+Estamos prontos para
+atender você.
+
 </h2>
 
 
 <div class="schedule-item">
 
 <span>
+
 Segunda a Sexta-feira
+
 </span>
 
 <strong>
+
 08h às 18h
+
 </strong>
 
 </div>
@@ -1512,11 +1880,15 @@ Segunda a Sexta-feira
 <div class="schedule-item">
 
 <span>
+
 Sábado
+
 </span>
 
 <strong>
+
 08h às 13h
+
 </strong>
 
 </div>
@@ -1525,11 +1897,15 @@ Sábado
 <div class="schedule-item">
 
 <span>
+
 Domingo
+
 </span>
 
 <strong>
+
 Fechado
+
 </strong>
 
 </div>
@@ -1545,16 +1921,21 @@ Fechado
 
 
 
-<!-- ==================================================
-     CONTATO FINAL
-================================================== -->
+<!-- =========================================
+     CONTATO
+========================================= -->
 
-<section class="final-cta" id="contato">
+<section
+class="final-cta"
+id="contato">
 
 <div class="container">
 
 <h2>
-PRECISA DE UMA SOLUÇÃO EM CLIMATIZAÇÃO?
+
+PRECISA DE UMA SOLUÇÃO
+EM CLIMATIZAÇÃO?
+
 </h2>
 
 
@@ -1566,7 +1947,8 @@ e solicite seu orçamento.
 </p>
 
 
-<a href="https://wa.me/5531988336861"
+<a
+href="https://wa.me/5531988336861"
 target="_blank"
 class="btn btn-whatsapp">
 
@@ -1580,9 +1962,9 @@ class="btn btn-whatsapp">
 
 
 
-<!-- ==================================================
+<!-- =========================================
      RODAPÉ
-================================================== -->
+========================================= -->
 
 <footer>
 
@@ -1611,10 +1993,12 @@ CLIMATIZAÇÃO • REFRIGERAÇÃO • INSTALAÇÃO
 
 <br>
 
+
 <p>
 
-Conforto, qualidade, tecnologia
-e eficiência para o seu ambiente.
+Conforto, qualidade,
+tecnologia e eficiência
+para o seu ambiente.
 
 </p>
 
@@ -1632,19 +2016,31 @@ CONTATO
 
 
 <p>
+
 📱 (31) 98833-6861
+
 </p>
 
 
 <p>
+
 📍 Rua Sete de Setembro, 408
+
 </p>
 
 
 <p>
-Bairro Nacional – Contagem/MG
+
+Bairro Nacional
+
 </p>
 
+
+<p>
+
+Contagem – MG
+
+</p>
 
 </div>
 
@@ -1660,21 +2056,28 @@ HORÁRIO
 
 
 <p>
+
 Segunda a Sexta<br>
+
 08h às 18h
+
 </p>
 
 
 <p>
+
 Sábado<br>
+
 08h às 13h
+
 </p>
 
 
 <p>
-Domingo: Fechado
-</p>
 
+Domingo: Fechado
+
+</p>
 
 </div>
 
@@ -1708,9 +2111,12 @@ Todos os direitos reservados.
 
 
 
-<!-- BOTÃO WHATSAPP -->
+<!-- =========================================
+     WHATSAPP FLUTUANTE
+========================================= -->
 
-<a href="https://wa.me/5531988336861"
+<a
+href="https://wa.me/5531988336861"
 target="_blank"
 class="whatsapp-float"
 title="Falar no WhatsApp">
@@ -1721,4 +2127,5 @@ title="Falar no WhatsApp">
 
 
 </body>
+
 </html>
