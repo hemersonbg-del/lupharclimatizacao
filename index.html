@@ -1,505 +1,2009 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>LUPHAR Climatização | Conforto e Tecnologia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<title>LUPHAR Climatização | Conforto e Tecnologia</title>
 
-    html {
-      scroll-behavior: smooth;
-    }
+<style>
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #172033;
-      background: #ffffff;
-      line-height: 1.6;
-    }
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
 
-    header {
-      background: #0E1A2B;
-      color: white;
-      padding: 18px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
+html {
+    scroll-behavior: smooth;
+}
 
-    .logo span {
-      color: #29B6F6;
-    }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #26374a;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    padding: 75px 0;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    background: #0E1A2B;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.25);
+}
+
+.header-content {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #29B6F6;
+}
+
+.logo small {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #29B6F6;
+}
+
+.header-whatsapp {
+    background: #1dbf63;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: 580px;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(14,26,43,0.96) 0%,
+        rgba(14,26,43,0.85) 40%,
+        rgba(14,26,43,0.20) 100%
+    ),
+    url("https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1800&q=90");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-tag {
+    color: #29B6F6;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+
+    font-size: 54px;
+    line-height: 1.08;
+
+    margin-bottom: 22px;
+
+    text-transform: uppercase;
+}
+
+.hero h1 span {
+    color: #29B6F6;
+}
+
+.hero p {
+
+    font-size: 19px;
+    max-width: 600px;
+
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.btn {
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    display: inline-block;
+
+    transition: 0.3s;
+}
+
+.btn-blue {
+
+    background: #1976D2;
+
+    color: white;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+.btn-green {
+
+    background: #1dbf63;
+
+    color: white;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+.btn:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+.section-header {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.section-header span {
+
+    color: #1565C0;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+}
+
+.section-header h2 {
+
+    font-size: 36px;
+
+    color: #0E1A2B;
+
+    margin-top: 8px;
+}
+
+.section-header p {
+
+    color: #5f6b78;
+
+    margin-top: 8px;
+}
+
+
+/* =========================
+   SERVIÇOS
+========================= */
+
+.services {
+
+    background: #f4f7fa;
+}
+
+.service-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 20px;
+}
+
+.service-card {
+
+    background: white;
+
+    padding: 28px 24px;
+
+    border-radius: 12px;
+
+    border: 1px solid #dce5ec;
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.10);
+}
+
+.service-icon {
+
+    font-size: 34px;
+
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+
+    color: #17385d;
+
+    margin-bottom: 10px;
+
+    font-size: 18px;
+}
+
+.service-card p {
+
+    color: #617080;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   QUEM SOMOS
+========================= */
+
+.about {
+
+    background:
+
+    linear-gradient(
+    90deg,
+    rgba(14,26,43,0.97),
+    rgba(14,26,43,0.85)
+    ),
+
+    url("https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+}
+
+.about-content {
+
+    display: grid;
+
+    grid-template-columns:
+    1.4fr 0.6fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.about h2 {
+
+    font-size: 38px;
+
+    margin-bottom: 20px;
+}
+
+.about p {
+
+    margin-bottom: 15px;
+
+    color: #e1e8ef;
+}
+
+.about-list {
+
+    border-left:
+    1px solid rgba(255,255,255,0.3);
+
+    padding-left: 35px;
+}
+
+.about-list div {
+
+    margin-bottom: 22px;
+
+    font-weight: bold;
+}
+
+.about-list span {
+
+    color: #29B6F6;
+
+    margin-right: 10px;
+}
+
+
+/* =========================
+   QUEM ATENDEMOS
+========================= */
+
+.audience {
+
+    background: #ffffff;
+}
+
+.audience-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(6, 1fr);
+
+    gap: 15px;
+}
+
+.audience-card {
+
+    background: #f6f8fa;
+
+    border: 1px solid #dce5ec;
+
+    padding: 25px 15px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.audience-card:hover {
+
+    background: #1565C0;
+
+    color: white;
+
+    transform: translateY(-4px);
+}
+
+.audience-card .icon {
+
+    font-size: 30px;
+
+    display: block;
+
+    margin-bottom: 10px;
+}
+
+.audience-card h3 {
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   DIFERENCIAIS
+========================= */
+
+.differentials {
+
+    background: #edf3f8;
+}
+
+.differentials-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.differential {
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+.differential-icon {
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+.differential h3 {
+
+    color: #0E1A2B;
+
+    margin-bottom: 8px;
+}
+
+.differential p {
+
+    color: #657382;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   ATENDIMENTO
+========================= */
+
+.contact-area {
+
+    background: #ffffff;
+}
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    1fr 1fr 1fr;
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+.location-box {
+
+    background: #f3f7fa;
+
+    padding: 35px;
+
+    border-radius: 12px;
+}
+
+.location-box h3 {
+
+    color: #0E1A2B;
+
+    margin-bottom: 18px;
+}
+
+.location-box p {
+
+    margin-bottom: 14px;
+
+    font-size: 15px;
+}
+
+
+/* MAPA */
+
+.map-box {
+
+    background:
+
+    radial-gradient(circle,
+    #c7e9ff,
+    #e9f6fd,
+    #ffffff);
+
+    border-radius: 12px;
+
+    padding: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    border: 1px solid #d9e5ed;
+}
+
+.map-circle {
+
+    width: 190px;
+
+    height: 190px;
+
+    border-radius: 50%;
+
+    border: 2px solid #29B6F6;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    color: #1565C0;
+
+    font-weight: bold;
+}
+
+.map-circle::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 130px;
+
+    height: 130px;
+
+    border-radius: 50%;
+
+    border: 1px dashed #1565C0;
+}
+
+
+/* CONTATO */
+
+.whatsapp-box {
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #0E1A2B,
+    #173f70);
+
+    color: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+}
+
+.whatsapp-box h3 {
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+.whatsapp-box p {
+
+    color: #dce6ef;
+
+    margin-bottom: 25px;
+}
+
+.phone {
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   HORÁRIOS
+========================= */
+
+.hours {
+
+    background: #0E1A2B;
+
+    color: white;
+
+    padding: 65px 0;
+}
+
+.hours-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.hours h2 {
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+.schedule {
+
+    display: grid;
+
+    gap: 18px;
+}
+
+.schedule-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 16px 0;
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.15);
+}
+
+.schedule-item strong {
+
+    color: #29B6F6;
+}
+
+
+/* =========================
+   CTA FINAL
+========================= */
+
+.final-cta {
+
+    background:
+    linear-gradient(
+    90deg,
+    #1565C0,
+    #0E1A2B);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 75px 0;
+}
+
+.final-cta h2 {
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.final-cta p {
+
+    font-size: 18px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+
+    background: #091321;
+
+    color: white;
+
+    padding: 40px 0 20px;
+}
+
+.footer-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    1.2fr 1fr 1fr;
+
+    gap: 40px;
+
+    padding-bottom: 30px;
+}
+
+.footer-logo {
+
+    font-size: 28px;
+
+    font-weight: bold;
+}
+
+.footer-logo span {
+
+    color: #29B6F6;
+}
+
+.footer-title {
+
+    color: #29B6F6;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+footer p {
+
+    color: #b9c6d1;
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+.copyright {
+
+    border-top:
+    1px solid rgba(255,255,255,0.1);
+
+    padding-top: 20px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   BOTÃO FLUTUANTE WHATSAPP
+========================= */
+
+.whatsapp-float {
+
+    position: fixed;
+
+    right: 22px;
+
+    bottom: 22px;
+
+    background: #25D366;
+
+    color: white;
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 28px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.3);
+
+    z-index: 999;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width: 900px) {
 
     nav {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
+        display: none;
     }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
+    .about-content {
+
+        grid-template-columns: 1fr;
     }
 
-    nav a:hover {
-      color: #29B6F6;
+    .audience-grid {
+
+        grid-template-columns:
+        repeat(3, 1fr);
     }
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .differentials-grid {
+
+        grid-template-columns:
+        repeat(2, 1fr);
+    }
+
+    .footer-grid {
+
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media(max-width: 600px) {
 
     .hero {
-      min-height: 600px;
-      background:
-        linear-gradient(90deg, rgba(14,26,43,0.95), rgba(14,26,43,0.65)),
-        url("https://images.unsplash.com/photo-1581092919535-7146ff1a5902?auto=format&fit=crop&w=1600&q=80");
-      background-size: cover;
-      background-position: center;
-      color: white;
-      display: flex;
-      align-items: center;
-      padding: 60px 8%;
-    }
 
-    .hero-content {
-      max-width: 700px;
+        min-height: 650px;
+
+        background-position: center;
     }
 
     .hero h1 {
-      font-size: 52px;
-      line-height: 1.1;
-      margin-bottom: 20px;
+
+        font-size: 36px;
     }
 
     .hero p {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
 
-    .btn {
-      display: inline-block;
-      padding: 15px 25px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-right: 10px;
-      margin-bottom: 10px;
-    }
-
-    .btn-primary {
-      background: #1565C0;
-      color: white;
-    }
-
-    .btn-whatsapp {
-      background: #25D366;
-      color: white;
-    }
-
-    section {
-      padding: 80px 8%;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-
-    .section-title h2 {
-      font-size: 36px;
-      color: #0E1A2B;
-      margin-bottom: 10px;
-    }
-
-    .section-title p {
-      color: #666;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: #f5f7fa;
-      padding: 30px;
-      border-radius: 10px;
-      border-bottom: 4px solid #1565C0;
-    }
-
-    .card h3 {
-      margin-bottom: 12px;
-      color: #0E1A2B;
-    }
-
-    .about {
-      background: #0E1A2B;
-      color: white;
-    }
-
-    .about h2 {
-      font-size: 38px;
-      margin-bottom: 20px;
-    }
-
-    .about p {
-      max-width: 800px;
-      font-size: 18px;
-    }
-
-    .audience {
-      background: #f5f7fa;
-    }
-
-    .audience-item {
-      text-align: center;
-      padding: 25px;
-      background: white;
-      border-radius: 10px;
-      font-weight: bold;
-      font-size: 18px;
-    }
-
-    .differentials {
-      text-align: center;
-    }
-
-    .differential {
-      padding: 25px;
-    }
-
-    .differential h3 {
-      color: #1565C0;
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    .service-area {
-      background: #eaf5fc;
-      text-align: center;
-    }
-
-    .service-area h2 {
-      color: #0E1A2B;
-      margin-bottom: 20px;
-    }
-
-    .contact {
-      background: #1565C0;
-      color: white;
-      text-align: center;
-    }
-
-    .contact h2 {
-      font-size: 36px;
-      margin-bottom: 15px;
-    }
-
-    .contact p {
-      font-size: 20px;
-      margin-bottom: 25px;
-    }
-
-    footer {
-      background: #0E1A2B;
-      color: white;
-      text-align: center;
-      padding: 35px 8%;
-    }
-
-    footer p {
-      margin: 8px 0;
-    }
-
-    @media (max-width: 768px) {
-
-      header {
-        justify-content: center;
-        text-align: center;
-      }
-
-      nav {
-        justify-content: center;
-      }
-
-      .hero h1 {
-        font-size: 36px;
-      }
-
-      .hero p {
         font-size: 17px;
-      }
-
-      section {
-        padding: 60px 6%;
-      }
     }
-  </style>
+
+    .section-header h2 {
+
+        font-size: 28px;
+    }
+
+    .audience-grid {
+
+        grid-template-columns:
+        repeat(2, 1fr);
+    }
+
+    .differentials-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .hours-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .header-whatsapp {
+
+        padding: 10px 15px;
+
+        font-size: 12px;
+    }
+
+    .logo {
+
+        font-size: 22px;
+    }
+}
+
+</style>
+
 </head>
+
 
 <body>
 
-  <header>
-    <div class="logo">
-      LUPHAR <span>CLIMATIZAÇÃO</span>
-    </div>
 
-    <nav>
-      <a href="#inicio">Início</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#empresa">Empresa</a>
-      <a href="#atendimento">Atendimento</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
+<!-- =========================
+     CABEÇALHO
+========================= -->
 
+<header>
 
-  <section class="hero" id="inicio">
-    <div class="hero-content">
+<div class="container header-content">
 
-      <h1>CONFORTO E TECNOLOGIA PARA O SEU AMBIENTE</h1>
+<div class="logo">
 
-      <p>
-        Soluções completas em climatização, instalação, manutenção
-        e higienização para residências, empresas e diversos ambientes.
-      </p>
+LUPHAR <span>AR</span>
 
-      <a class="btn btn-primary" href="#contato">
-        SOLICITAR ORÇAMENTO
-      </a>
+<small>
+CLIMATIZAÇÃO • REFRIGERAÇÃO • INSTALAÇÃO
+</small>
 
-      <a class="btn btn-whatsapp"
-         href="https://wa.me/5531988336861"
-         target="_blank">
-        FALAR NO WHATSAPP
-      </a>
+</div>
 
-    </div>
-  </section>
 
+<nav>
 
-  <section id="servicos">
+<a href="#inicio">Início</a>
 
-    <div class="section-title">
-      <h2>NOSSOS SERVIÇOS</h2>
+<a href="#servicos">Serviços</a>
 
-      <p>
-        Soluções profissionais para climatização e conforto do seu ambiente.
-      </p>
-    </div>
+<a href="#empresa">Empresa</a>
 
-    <div class="cards">
+<a href="#atendimento">Atendimento</a>
 
-      <div class="card">
-        <h3>❄️ Instalação</h3>
-        <p>Instalação profissional de equipamentos de ar-condicionado.</p>
-      </div>
+<a href="#contato">Contato</a>
 
-      <div class="card">
-        <h3>🔧 Manutenção Preventiva</h3>
-        <p>Cuidados para manter o desempenho e aumentar a vida útil do equipamento.</p>
-      </div>
+</nav>
 
-      <div class="card">
-        <h3>⚙️ Manutenção Corretiva</h3>
-        <p>Diagnóstico e solução de problemas em sistemas de climatização.</p>
-      </div>
 
-      <div class="card">
-        <h3>🧼 Limpeza e Higienização</h3>
-        <p>Mais qualidade do ar, conforto e eficiência.</p>
-      </div>
+<a
+href="https://wa.me/5531988336861"
+target="_blank"
+class="header-whatsapp">
 
-      <div class="card">
-        <h3>🏢 Climatização Comercial</h3>
-        <p>Soluções para empresas, lojas e estabelecimentos comerciais.</p>
-      </div>
+💬 Falar no WhatsApp
 
-      <div class="card">
-        <h3>🏭 Climatização Industrial</h3>
-        <p>Soluções técnicas para diferentes necessidades industriais.</p>
-      </div>
+</a>
 
-      <div class="card">
-        <h3>🏘️ Condomínios</h3>
-        <p>Atendimento para condomínios e áreas comuns.</p>
-      </div>
+</div>
 
-      <div class="card">
-        <h3>📋 PMOC</h3>
-        <p>Plano de Manutenção, Operação e Controle conforme a necessidade do ambiente.</p>
-      </div>
+</header>
 
-    </div>
 
-  </section>
 
+<!-- =========================
+     HERO
+========================= -->
 
-  <section class="about" id="empresa">
+<section class="hero" id="inicio">
 
-    <h2>LUPHAR CLIMATIZAÇÃO</h2>
+<div class="container">
 
-    <p>
-      Tecnologia, qualidade e eficiência para proporcionar conforto
-      em todos os ambientes.
-    </p>
+<div class="hero-content">
 
-    <br>
+<div class="hero-tag">
 
-    <p>
-      Atuamos com soluções em climatização para residências,
-      empresas, comércios, indústrias, condomínios e construtoras,
-      buscando oferecer um atendimento profissional e soluções
-      adequadas para cada necessidade.
-    </p>
+LUPHAR CLIMATIZAÇÃO
 
-  </section>
+</div>
 
 
-  <section class="audience">
+<h1>
 
-    <div class="section-title">
-      <h2>QUEM ATENDEMOS</h2>
-    </div>
+CONFORTO E
+<span>TECNOLOGIA</span>
 
-    <div class="cards">
+<br>
 
-      <div class="audience-item">🏠 Residências</div>
+PARA O SEU AMBIENTE
 
-      <div class="audience-item">🏢 Empresas</div>
+</h1>
 
-      <div class="audience-item">🛒 Comércios</div>
 
-      <div class="audience-item">🏭 Indústrias</div>
+<p>
 
-      <div class="audience-item">🏘️ Condomínios</div>
+Soluções completas em climatização,
+refrigeração, instalação, manutenção
+e higienização para residências,
+empresas e diversos ambientes.
 
-      <div class="audience-item">🏗️ Construtoras</div>
+</p>
 
-    </div>
 
-  </section>
+<div class="hero-buttons">
 
+<a
+href="#contato"
+class="btn btn-blue">
 
-  <section class="differentials">
+📋 SOLICITAR ORÇAMENTO
 
-    <div class="section-title">
-      <h2>POR QUE ESCOLHER A LUPHAR?</h2>
-    </div>
+</a>
 
-    <div class="cards">
 
-      <div class="differential">
-        <h3>❄️ CONFORTO</h3>
-        <p>Soluções para melhorar o bem-estar do seu ambiente.</p>
-      </div>
+<a
+href="https://wa.me/5531988336861"
+target="_blank"
+class="btn btn-green">
 
-      <div class="differential">
-        <h3>⭐ QUALIDADE</h3>
-        <p>Atenção e cuidado em cada serviço realizado.</p>
-      </div>
+💬 FALAR NO WHATSAPP
 
-      <div class="differential">
-        <h3>⚙️ TECNOLOGIA</h3>
-        <p>Soluções modernas e adequadas para cada necessidade.</p>
-      </div>
+</a>
 
-      <div class="differential">
-        <h3>📈 EFICIÊNCIA</h3>
-        <p>Buscamos desempenho e qualidade para nossos clientes.</p>
-      </div>
+</div>
 
-    </div>
+</div>
 
-  </section>
+</div>
 
+</section>
 
-  <section class="service-area" id="atendimento">
 
-    <h2>📍 ÁREA DE ATENDIMENTO</h2>
 
-    <p>
-      Nossa sede está localizada em:
-    </p>
+<!-- =========================
+     SERVIÇOS
+========================= -->
 
-    <br>
+<section class="services" id="servicos">
 
-    <h3>
-      Rua Sete de Setembro, 408<br>
-      Bairro Nacional – Contagem/MG
-    </h3>
+<div class="container">
 
-    <br>
+<div class="section-header">
 
-    <p>
-      Atendemos clientes em um raio de até
-      <strong>70 km da nossa sede.</strong>
-    </p>
+<span>NOSSOS SERVIÇOS</span>
 
-  </section>
+<h2>
+Soluções completas em climatização
+</h2>
 
+<p>
 
-  <section class="contact" id="contato">
+Trabalhamos com soluções profissionais
+para proporcionar conforto, qualidade
+e eficiência ao seu ambiente.
 
-    <h2>PRECISA DE CLIMATIZAÇÃO?</h2>
+</p>
 
-    <p>
-      Fale com a nossa equipe e solicite seu orçamento.
-    </p>
+</div>
 
-    <h3>📱 (31) 98833-6861</h3>
 
-    <br>
+<div class="service-grid">
 
-    <a class="btn btn-whatsapp"
-       href="https://wa.me/5531988336861"
-       target="_blank">
 
-      FALAR NO WHATSAPP
+<div class="service-card">
 
-    </a>
+<div class="service-icon">❄️</div>
 
-  </section>
+<h3>
+Instalação de Ar-Condicionado
+</h3>
 
+<p>
+Instalação profissional para
+residências, empresas e ambientes comerciais.
+</p>
 
-  <footer>
+</div>
 
-    <h3>LUPHAR CLIMATIZAÇÃO</h3>
 
-    <p>
-      CONFORTO • QUALIDADE • TECNOLOGIA • EFICIÊNCIA
-    </p>
 
-    <p>
-      📍 Contagem – MG
-    </p>
+<div class="service-card">
 
-    <p>
-      📱 (31) 98833-6861
-    </p>
+<div class="service-icon">🔧</div>
 
-    <p>
-      © 2026 LUPHAR Climatização. Todos os direitos reservados.
-    </p>
+<h3>
+Manutenção Preventiva
+</h3>
 
-  </footer>
+<p>
+Prevenção de falhas e cuidados
+para aumentar a vida útil dos equipamentos.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="service-icon">⚙️</div>
+
+<h3>
+Manutenção Corretiva
+</h3>
+
+<p>
+Diagnóstico e solução de problemas
+em sistemas de climatização.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="service-icon">✨</div>
+
+<h3>
+Limpeza e Higienização
+</h3>
+
+<p>
+Mais qualidade do ar, conforto
+e melhor desempenho do equipamento.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="service-icon">🏢</div>
+
+<h3>
+Climatização Comercial
+</h3>
+
+<p>
+Soluções para empresas,
+escritórios, lojas e comércios.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="service-icon">🏭</div>
+
+<h3>
+Climatização Industrial
+</h3>
+
+<p>
+Atendimento técnico para
+diferentes necessidades industriais.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="service-icon">🏘️</div>
+
+<h3>
+Condomínios
+</h3>
+
+<p>
+Instalação e manutenção para
+condomínios e áreas comuns.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="service-icon">📋</div>
+
+<h3>
+PMOC
+</h3>
+
+<p>
+Plano de Manutenção, Operação
+e Controle conforme a necessidade.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     QUEM SOMOS
+========================= -->
+
+<section class="about" id="empresa">
+
+<div class="container">
+
+<div class="about-content">
+
+
+<div>
+
+<span class="hero-tag">
+
+QUEM SOMOS
+
+</span>
+
+
+<h2>
+
+LUPHAR CLIMATIZAÇÃO
+
+</h2>
+
+
+<p>
+
+Somos uma empresa especializada em
+soluções de climatização e refrigeração,
+comprometida com qualidade, eficiência
+e atendimento profissional.
+
+</p>
+
+
+<p>
+
+Nosso objetivo é proporcionar conforto
+e bem-estar para nossos clientes,
+oferecendo soluções adequadas para
+cada ambiente e necessidade.
+
+</p>
+
+
+<a
+href="#contato"
+class="btn btn-blue">
+
+CONHEÇA A LUPHAR
+
+</a>
+
+</div>
+
+
+
+<div class="about-list">
+
+<div>
+
+<span>⚙️</span>
+
+Tecnologia e eficiência
+
+</div>
+
+
+<div>
+
+<span>⭐</span>
+
+Qualidade em cada detalhe
+
+</div>
+
+
+<div>
+
+<span>👨‍🔧</span>
+
+Profissionais qualificados
+
+</div>
+
+
+<div>
+
+<span>🛡️</span>
+
+Compromisso com o cliente
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     QUEM ATENDEMOS
+========================= -->
+
+<section class="audience">
+
+<div class="container">
+
+<div class="section-header">
+
+<span>QUEM ATENDEMOS</span>
+
+<h2>
+
+Soluções para todos os segmentos
+
+</h2>
+
+</div>
+
+
+<div class="audience-grid">
+
+
+<div class="audience-card">
+
+<span class="icon">🏠</span>
+
+<h3>Residências</h3>
+
+</div>
+
+
+<div class="audience-card">
+
+<span class="icon">🏢</span>
+
+<h3>Empresas</h3>
+
+</div>
+
+
+<div class="audience-card">
+
+<span class="icon">🏪</span>
+
+<h3>Comércios</h3>
+
+</div>
+
+
+<div class="audience-card">
+
+<span class="icon">🏭</span>
+
+<h3>Indústrias</h3>
+
+</div>
+
+
+<div class="audience-card">
+
+<span class="icon">🏘️</span>
+
+<h3>Condomínios</h3>
+
+</div>
+
+
+<div class="audience-card">
+
+<span class="icon">🏗️</span>
+
+<h3>Construtoras</h3>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     DIFERENCIAIS
+========================= -->
+
+<section class="differentials">
+
+<div class="container">
+
+<div class="section-header">
+
+<span>NOSSOS DIFERENCIAIS</span>
+
+<h2>
+
+Por que escolher a LUPHAR?
+
+</h2>
+
+<p>
+
+Nossos diferenciais fazem toda a diferença.
+
+</p>
+
+</div>
+
+
+<div class="differentials-grid">
+
+
+<div class="differential">
+
+<div class="differential-icon">
+
+❄️
+
+</div>
+
+<h3>
+
+CONFORTO
+
+</h3>
+
+<p>
+
+Soluções para melhorar
+o bem-estar do seu ambiente.
+
+</p>
+
+</div>
+
+
+
+<div class="differential">
+
+<div class="differential-icon">
+
+⭐
+
+</div>
+
+<h3>
+
+QUALIDADE
+
+</h3>
+
+<p>
+
+Atenção e cuidado
+em cada serviço realizado.
+
+</p>
+
+</div>
+
+
+
+<div class="differential">
+
+<div class="differential-icon">
+
+⚙️
+
+</div>
+
+<h3>
+
+TECNOLOGIA
+
+</h3>
+
+<p>
+
+Soluções modernas
+e eficientes.
+
+</p>
+
+</div>
+
+
+
+<div class="differential">
+
+<div class="differential-icon">
+
+📈
+
+</div>
+
+<h3>
+
+EFICIÊNCIA
+
+</h3>
+
+<p>
+
+Buscamos sempre
+os melhores resultados.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     ATENDIMENTO
+========================= -->
+
+<section
+class="contact-area"
+id="atendimento">
+
+<div class="container">
+
+<div class="section-header">
+
+<span>ÁREA DE ATENDIMENTO</span>
+
+<h2>
+
+Contagem e região
+
+</h2>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<!-- ENDEREÇO -->
+
+<div class="location-box">
+
+<h3>
+
+📍 Nossa localização
+
+</h3>
+
+
+<p>
+
+<strong>
+
+Rua Sete de Setembro, 408
+
+</strong>
+
+</p>
+
+
+<p>
+
+Bairro Nacional
+
+<br>
+
+Contagem – MG
+
+</p>
+
+
+<p>
+
+📍 Atendemos clientes
+em um raio de até
+
+<strong>70 km</strong>
+
+da nossa sede.
+
+</p>
+
+</div>
+
+
+
+<!-- MAPA VISUAL -->
+
+<div class="map-box">
+
+<div class="map-circle">
+
+📍 CONTAGEM
+
+<br>
+
+70 KM
+
+</div>
+
+</div>
+
+
+
+<!-- WHATSAPP -->
+
+<div
+class="whatsapp-box"
+id="contato">
+
+<h3>
+
+PRECISA DE CLIMATIZAÇÃO?
+
+</h3>
+
+
+<p>
+
+Fale agora com nossa equipe
+e solicite seu orçamento.
+
+</p>
+
+
+<a
+href="https://wa.me/5531988336861"
+target="_blank"
+class="btn btn-green">
+
+💬 FALAR NO WHATSAPP
+
+</a>
+
+
+<div class="phone">
+
+📞 (31) 98833-6861
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     HORÁRIO
+========================= -->
+
+<section class="hours">
+
+<div class="container">
+
+<div class="hours-grid">
+
+
+<div>
+
+<div class="hero-tag">
+
+HORÁRIO DE FUNCIONAMENTO
+
+</div>
+
+
+<h2>
+
+Estamos prontos para atender você.
+
+</h2>
+
+
+<p>
+
+Entre em contato com a LUPHAR
+Climatização e solicite um orçamento
+para o seu projeto ou serviço.
+
+</p>
+
+</div>
+
+
+
+<div class="schedule">
+
+
+<div class="schedule-item">
+
+<span>
+
+Segunda a Sexta-feira
+
+</span>
+
+<strong>
+
+08h às 18h
+
+</strong>
+
+</div>
+
+
+
+<div class="schedule-item">
+
+<span>
+
+Sábado
+
+</span>
+
+<strong>
+
+08h às 13h
+
+</strong>
+
+</div>
+
+
+
+<div class="schedule-item">
+
+<span>
+
+Domingo
+
+</span>
+
+<strong>
+
+Fechado
+
+</strong>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     CTA FINAL
+========================= -->
+
+<section class="final-cta">
+
+<div class="container">
+
+<h2>
+
+PRECISA DE UMA SOLUÇÃO
+EM CLIMATIZAÇÃO?
+
+</h2>
+
+
+<p>
+
+Entre em contato agora e
+solicite seu orçamento.
+
+</p>
+
+
+<a
+href="https://wa.me/5531988336861"
+target="_blank"
+class="btn btn-green">
+
+💬 FALAR NO WHATSAPP
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     RODAPÉ
+========================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div>
+
+<div class="footer-logo">
+
+LUPHAR
+<span>AR</span>
+
+</div>
+
+
+<p>
+
+CLIMATIZAÇÃO • REFRIGERAÇÃO • INSTALAÇÃO
+
+</p>
+
+
+<p>
+
+Conforto, qualidade,
+tecnologia e eficiência.
+
+</p>
+
+</div>
+
+
+
+<div>
+
+<div class="footer-title">
+
+CONTATO
+
+</div>
+
+
+<p>
+
+📞 (31) 98833-6861
+
+</p>
+
+
+<p>
+
+📍 Rua Sete de Setembro, 408
+
+</p>
+
+
+<p>
+
+Bairro Nacional – Contagem/MG
+
+</p>
+
+</div>
+
+
+
+<div>
+
+<div class="footer-title">
+
+ATENDIMENTO
+
+</div>
+
+
+<p>
+
+Segunda a Sexta
+
+<br>
+
+08h às 18h
+
+</p>
+
+
+<p>
+
+Sábado
+
+<br>
+
+08h às 13h
+
+</p>
+
+
+<p>
+
+Domingo: Fechado
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+<p>
+
+❄️ CONFORTO
+• QUALIDADE
+• TECNOLOGIA
+• EFICIÊNCIA
+
+</p>
+
+
+<p>
+
+© 2026 LUPHAR Climatização.
+Todos os direitos reservados.
+
+</p>
+
+</div>
+
+
+</div>
+
+</footer>
+
+
+
+<!-- BOTÃO WHATSAPP FLUTUANTE -->
+
+<a
+href="https://wa.me/5531988336861"
+target="_blank"
+class="whatsapp-float"
+title="Falar no WhatsApp">
+
+💬
+
+</a>
+
 
 </body>
+
 </html>
